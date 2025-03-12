@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Raspberry Pi Server</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace !important;
+            background: radial-gradient(circle, #001100, #000000) !important;
+            color: #00ff00 !important;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(0, 30, 0, 0.9);
+            border: 2px solid #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ff00;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+        }
+
+        .secure-icon {
+            font-size: 72px;
+            text-align: center;
+            margin: 20px 0;
+            animation: pulse 2s infinite alternate;
+        }
+
+        .server-info {
+            background: rgba(0, 50, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 5px #00ff00;
+        }
+
+        .security-badge {
+            background: linear-gradient(45deg, #004400, #008800);
+            color: white;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #00ff00;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .security-badge:hover {
+            background: #00aa00;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        /* Enhancing the Server IP line */
+        .server-ip {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ff00;
+            background-color: #003300;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #00ff00;
+            display: inline-block;
+            margin-top: 20px;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px #00ff00; }
+            100% { text-shadow: 0 0 20px #00ff00; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RASPBERRY PI SECURE SERVER</h1>
+        <div class="secure-icon">🔒</div>
+        <div class="server-info">
+            <p>This server is protected by multiple layers of security:</p>
+            <div>
+                <span class="security-badge">VLAN Segmentation</span>
+                <span class="security-badge">Router ACLs</span>
+                <span class="security-badge">HTTPS Encryption</span>
+                <span class="security-badge">Limited Service Access</span>
+            </div>
+        </div>
+        <p class="server-ip">Server IP: 10.___.10.3</p>
+        <p>Only HTTP and HTTPS traffic is permitted to this server. All other protocols are blocked by ACLs.</p>
+        <p>This is an example of Defense in Depth security implementation.</p>
+    </div>
+</body>
+</html>
